@@ -1,0 +1,27 @@
+base64 image.png
+
+-> ta output ->
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." />
+
+
+
+Base64 works by encoding every 3 bytes of binary data into 4 characters. Each character represents 6 bits of information. So:
+
+- Original data: 3 bytes
+- Encoded data: 4 Base64 characters
+
+Base64 characters are stored as text, which takes more space than raw binary. This leads to:
+
+- ~33% increase in size
+
+
+
+
+
+
+Despite the size increase, Base64 is widely used because:
+
+- It avoids corruption in text-only systems.
+- It’s easy to embed in HTML, XML, or JSON.
+- It simplifies transport across platforms that don’t support binary.
