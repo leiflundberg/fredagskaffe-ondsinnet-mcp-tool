@@ -1,0 +1,1 @@
+# fredagskaffe-ondsinnet-mcp-tool
